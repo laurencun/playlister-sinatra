@@ -1,8 +1,13 @@
 class ArtistsController < ApplicationController
 
     get '/artists' do
-        @genres = Genre.all 
-        erb :"genres/index"
+        @artists = Artist.all 
+        erb :"artists/index"
+    end
+
+    get '/artists/:slug' do
+        @artist = Artist.find_by_slug(params[:slug])
+       er :'artist/show'
     end
 
 end
