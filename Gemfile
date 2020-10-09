@@ -10,6 +10,7 @@ gem 'sqlite3', '~> 1.3.6'
 gem 'shotgun'
 gem 'pry'
 gem 'tux'
+gem 'rack-flash3'
 
 group :test do
   gem 'launchy'
